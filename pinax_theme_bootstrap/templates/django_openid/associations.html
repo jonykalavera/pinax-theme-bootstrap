@@ -8,7 +8,7 @@
 {% block body %}
     <h1>{% trans "Manage OpenID Associations" %}</h1>
     
-    {% url "acct_passwd_set" as acct_passwd_set_url %}
+    {% url "account_password" as acct_passwd_set_url %}
     {% if not request.user.password %}
         <strong>{% blocktrans %}You have not set a password for this user account. You are unable to remove OpenID associations until you <a href="{{ acct_passwd_set_url }}">set a password</a>.{% endblocktrans %}</strong>
     {% endif %}

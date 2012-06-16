@@ -13,7 +13,7 @@
     </header>
     
     <div class="notice_settings">
-        {% url "acct_email" as email_url %}
+        {% url "account_settings" as email_url %}
         {% if user.email %}
             <p>
                 {% trans "Primary email" %}:<br />
