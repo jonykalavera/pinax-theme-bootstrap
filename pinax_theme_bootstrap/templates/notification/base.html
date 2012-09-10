@@ -3,10 +3,6 @@
 {% load i18n %}
 {% load url from future %}
 
-{% block extra_head %}
-    <link rel="alternate" type="application/atom+xml" title="Notices Feed" href="{% url "notification_feed_for_user" %}" />
-{% endblock %}
-
 {% block body_class %}notices{% endblock %}
 
 {% block subnav %}
